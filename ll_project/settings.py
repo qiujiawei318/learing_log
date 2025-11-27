@@ -160,3 +160,8 @@ if config.is_valid_platform():
                 'PORT': db_settings['port'],
     },
 }
+        
+ALLOWED_HOSTS = ['.onrender.com', 'localhost', '127.0.0.1']
+
+import os
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
